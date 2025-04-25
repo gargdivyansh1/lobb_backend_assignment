@@ -66,3 +66,22 @@ pip install -r requirements.txt
 pip install -r requirements.txt
 ```
 
+## API endpoints
+
+# URL Shortener Project
+
+This URL shortener uses a unique short code for each long URL. When the shortened URL is accessed, the system looks up the original URL from the database and performs a 3xx redirect.
+
+## How It Works:
+
+### Shortening:
+
+1. **Submit Long URL**: When a long URL is submitted, the system generates a unique short code.
+2. **Check for Duplicates**: The system ensures that no two long URLs have the same short code by checking the database for duplicates.
+3. **Save to Database**: The original URL is saved in the database along with the short code.
+
+### Redirecting:
+
+1. **Access Short URL**: When a short code is accessed, the system looks up the corresponding original URL from the database.
+2. **Redirect**: If found, the system sends a 3xx redirect response, instructing the browser to navigate to the original URL.
+
