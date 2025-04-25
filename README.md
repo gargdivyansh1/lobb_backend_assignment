@@ -11,16 +11,12 @@ The project consists of two main APIs:
 
 ### Project Structure
 
-# url-shortener/ 
-├── main.py 
-## FastAPI app with all endpoints 
-├── models.py 
-## Database models for storing URLs 
-├── database.py 
-## Database connection and setup 
-├── requirements.txt 
-## Required dependencies 
-└── README.md 
+url-shortener/
+    ├── main.py 
+    ├── models.py  
+    ├── database.py 
+    ├── requirements.txt 
+    └── README.md 
 
 
 ### Technologies Used
