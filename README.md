@@ -22,4 +22,31 @@ The project consists of two main APIs:
 ## Required dependencies 
 └── README.md 
 
-## Project documentation
+
+### Technologies Used
+
+- **FastAPI**: A modern, fast web framework for building APIs with Python 3.7+.
+- **SQLAlchemy**: ORM for managing database connections and querying.
+- **SQLite**: A lightweight database used for storing URL mappings.
+- **Pydantic**: For data validation and serialization.
+- **Uvicorn**: ASGI server to run the FastAPI application.
+
+---
+
+## How to Run the Project
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/url-shortener.git
+cd url-shortener
+
+
+# Create a virtual environment (optional but recommended)
+python3 -m venv venv
+
+# Activate the virtual environment
+# On Windows
+venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
