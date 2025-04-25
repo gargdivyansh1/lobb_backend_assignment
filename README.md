@@ -66,9 +66,28 @@ pip install -r requirements.txt
 pip install -r requirements.txt
 ```
 
-## API endpoints
+# Testing
 
-# URL Shortener Project
+To test the application:
+
+1. Run the server as described above.
+
+2. Use a tool like Postman or curl to test the POST and GET requests.
+
+3. Example test with curl:
+    * Shorten a URL:  
+
+```bash  
+curl -X 'POST' 'http://localhost:8000/shorten' \
+  -H 'Content-Type: application/json' \
+  -d '{"long_url": "https://www.example.com"}'
+```
+* Redirect using shortened URL:  
+
+```bash
+curl -L 'http://localhost:8000/abc123'
+```
+
 
 This URL shortener uses a unique short code for each long URL. When the shortened URL is accessed, the system looks up the original URL from the database and performs a 3xx redirect.
 
