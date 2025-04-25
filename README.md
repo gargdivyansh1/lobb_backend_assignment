@@ -61,7 +61,29 @@ pip install -r requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
-## 2. Redirect to Original URL
+## API endpoints
+
+### 1. Shorten a URL
+
+**POST `/shorten`**
+
+#### REQUEST 
+
+```bash
+{
+  "long_url": "https://www.example.com"
+}
+```
+
+#### RESPONSE
+
+```bash
+{
+  "short_url": "http://localhost:8000/abc123"
+}
+```
+
+### 2. Redirect to Original URL
 
 **GET `/{short_code}`**
 
@@ -76,7 +98,6 @@ Redirects to the original URL associated with the provided short code.
 
 #### Success
 **Status:** `302 Found`  
-**Headers:**
 
 ## Database
 
