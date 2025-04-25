@@ -66,6 +66,13 @@ pip install -r requirements.txt
 pip install -r requirements.txt
 ```
 
+## Database
+
+The application uses SQLite to store the mappings between the short codes and original URLs. The URL model has the following fields:
+
+- **original_url**: The original long URL
+- **short_url**: The generated shortened URL code
+
 # Testing
 
 To test the application:
