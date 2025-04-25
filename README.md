@@ -61,6 +61,22 @@ pip install -r requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
+## 2. Redirect to Original URL
+
+**GET `/{short_code}`**
+
+Redirects to the original URL associated with the provided short code.
+
+### Path Parameters
+| Parameter    | Type   | Description               |
+|--------------|--------|---------------------------|
+| `short_code` | string | The shortened URL code    |
+
+### Responses
+
+#### Success
+**Status:** `302 Found`  
+**Headers:**
 
 ## Database
 
