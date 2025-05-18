@@ -41,7 +41,11 @@ def getting_original(short_code: str, db: Session = Depends(get_db)):
     value = db.query(URL).filter(URL.short_url == short_code).first()
 
     if value:
-        return RedirectResponse(url = value.original_url)
+        return RedirectResponse(url = value.original_url) # type: ignore
     
     # if not found 
     raise HTTPException(status_code=404, detail="URL not found")
+
+
+
+## uvicorn main:app --reload
